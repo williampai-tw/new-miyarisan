@@ -14,8 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 
-  <script type="module" crossorigin src="/assets/index-BQtLWG2H.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CTXkM6yu.css">
+  <script type="module" crossorigin src="/assets/main-BHoMHBsZ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CXBpXkEe.css">
 </head>
 <body>
   <!-- ==========================================================
@@ -82,6 +82,18 @@
   <symbol id="i-clinical" viewBox="0 0 24 24">
     <path fill="url(#grad-brand)" d="M7 3.6h1.6a3.4 3.4 0 0 1 6.8 0H17a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5.6a2 2 0 0 1 2-2z"/>
     <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M9.6 4.6h4.8 M8.8 17.6v-3 M12 17.6v-6.2 M15.2 17.6v-4.4"/>
+  </symbol>
+
+  <!-- 菌株：斜放的桿菌（cbm588「菌株層級精確」） -->
+  <symbol id="i-strain" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M15.6 3.3a5 5 0 0 1 5.1 5.1L8.4 20.7a5 5 0 0 1-7.1-7.1z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M7.6 12.8l1.4 1.4 M11 9.4l1.4 1.4 M14.4 6l1.4 1.4"/>
+  </symbol>
+
+  <!-- 溫度計（cbm588「耐酸耐熱性佳」） -->
+  <symbol id="i-thermo" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M12 1.8a3.4 3.4 0 0 1 3.4 3.4v8.3a5.4 5.4 0 1 1-6.8 0V5.2A3.4 3.4 0 0 1 12 1.8z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M12 6.4v8.4 M12 17.6h.01"/>
   </symbol>
 
   <!-- 純線條勾勾（顏色、粗細由使用處的 CSS stroke 決定） -->
@@ -272,27 +284,37 @@
     <!-- 首頁 解決方案｜文案：文案全集 2.4｜圖位：HOME-CH-HOSPITAL、HOME-CH-RETAIL -->
 <section class="home-solution" id="solution">
   <div class="container home-solution__inner">
-    <!-- 左：3D 產品盒（可拖曳旋轉）／右：主標題＋段落 -->
+    <!-- 左：產品組合（捲動視差）／右：主標題＋段落 -->
     <div class="home-solution__intro">
       <div class="home-solution__product">
-        <!-- 3D 產品盒（樣式：components/product-box-3d.css；大小用 style="--pbox-w: 560px" 調整）
-     data-pbox-drag：可用滑鼠／手指拖曳 360° 旋轉，平常小角度自然擺動，放開後緩緩回到原位（JS：src/js/product-box-3d.js）
-     盒子後方疊 3 包內容物（素材：產品內容物.png）做示意 -->
-<div class="pbox-scene" role="img" aria-label="妙利散 BM 產品包裝與內容物" data-pbox-drag>
-  <div class="pbox-scene__sachets" aria-hidden="true">
-    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pbox-scene__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" style="--x: 14%; --y: 14%; --r: -5deg"></picture>
-    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pbox-scene__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" style="--x: 27%; --y: 11%; --r: -1deg"></picture>
-    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pbox-scene__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" style="--x: 40%; --y: 13%; --r: 3deg"></picture>
+        <!-- 依使用者指示（2026-11）：原本的 3D 產品盒換成小包裝＋大包裝＋散裝藥袋的捲動視差組合 -->
+        <!-- 產品組合：小包裝盒（前）＋三包藥袋（中）＋大包裝盒（後）（樣式：components/pack-stack.css；JS：src/js/pack-stack.js）
+     依使用者指示取代原本的 3D 產品盒。大小用外層的 --stack-w 調整，內部位置全部用容器寬的百分比（cqw）。
+     捲動視差（≥768）：--p 從 0（區塊上緣剛進畫面底部）推到 1（產品組在畫面正中央），之後維持完成狀態
+       - 兩個盒子：一開始上下錯開（大盒偏上、小盒偏下），慢慢對齊
+       - 九包散裝藥袋：一開始在盒子上方排成 3×3，往下滑進小包裝盒；最下排 3 包停在盒頂露出，其餘 6 包藏到盒子後面
+     手機（< 768）與「減少動態」：不跑動畫，直接顯示完成狀態（--p 預設 1）
+     每包的變數：--sx/--sy 起點、--fx/--fy 終點（left/top，單位 cqw）、--r0/--r1 起訖旋轉（deg）、--d 開始延遲（0～1） -->
+<div class="pack-stack" role="img" aria-label="妙利散 BM 產品包裝與內容物" data-pack-stack>
+  <div class="pack-stack__shadow" aria-hidden="true"></div>
+  <picture><source type="image/webp" srcset="/assets/pack-large-EZof9qDq.webp"><img class="pack-stack__large" src="/assets/pack-large-BP_WQuV5.png" alt="" width="720" height="826" loading="lazy" decoding="async"></picture>
+
+  <div class="pack-stack__sachets" aria-hidden="true">
+    <!-- 第 1 排（最上）：藏進盒子 -->
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:13; --sy:-27; --fx:12; --fy:62; --r0:-9; --r1:-4; --d:0"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:33; --sy:-29; --fx:27; --fy:63; --r0:4;  --r1:1;  --d:.03"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:53; --sy:-26; --fx:42; --fy:62; --r0:10; --r1:3;  --d:.06"></picture>
+    <!-- 第 2 排：藏進盒子 -->
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:12; --sy:-7;  --fx:6;  --fy:60; --r0:6;  --r1:-2; --d:.08"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:33; --sy:-9;  --fx:20; --fy:61; --r0:-6; --r1:2;  --d:.11"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:54; --sy:-6;  --fx:34; --fy:60; --r0:-3; --r1:-1; --d:.14"></picture>
+    <!-- 第 3 排（最下）：最後露出盒頂的三包 -->
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:13; --sy:13;  --fx:7;  --fy:39;   --r0:-4; --r1:-7; --d:.16"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:33; --sy:11;  --fx:21; --fy:37;   --r0:7;  --r1:-1; --d:.19"></picture>
+    <picture><source type="image/webp" srcset="/assets/sachet-Cx8n6cmq.webp"><img class="pack-stack__sachet" src="/assets/sachet-Fed9mEyR.png" alt="" loading="lazy" decoding="async" style="--sx:53; --sy:14;  --fx:35; --fy:38.5; --r0:-8; --r1:5;  --d:.22"></picture>
   </div>
-  <div class="pbox-scene__shadow" aria-hidden="true"></div>
-  <div class="pbox" aria-hidden="true">
-    <div class="pbox__face pbox__back"></div>
-    <div class="pbox__face pbox__bottom"></div>
-    <div class="pbox__face pbox__left"></div>
-    <div class="pbox__face pbox__top"></div>
-    <div class="pbox__face pbox__right"></div>
-    <div class="pbox__face pbox__front"></div>
-  </div>
+
+  <picture><source type="image/webp" srcset="/assets/pack-small-BLSab3fW.webp"><img class="pack-stack__small" src="/assets/pack-small-BBuFS2m5.png" alt="" width="1000" height="461" loading="lazy" decoding="async"></picture>
 </div>
 
       </div>
@@ -359,10 +381,10 @@
   </div>
 </section>
 
-    <!-- 首頁 研發團隊｜文案：文案全集 2.6｜圖位：research/lab-sunlight.png（素材：陽光下的專注實驗時光.png）
+    <!-- 首頁 研發團隊｜文案：文案全集 2.6｜圖位：research/lab-sunlight.png（素材：陽光下的實驗室研究員 pipetting.png）
      ⚠ 法規：避免醫師背書形象，用實驗室研究人員 -->
 <section class="home-research">
-  <picture><source type="image/webp" srcset="/assets/lab-sunlight-CLoEVPJd.webp"><img class="home-research__bg" src="/assets/lab-sunlight-Bff8GL60.jpg" alt="實驗室研究人員專注進行實驗"></picture>
+  <picture><source type="image/webp" srcset="/assets/lab-sunlight-BXmMacB8.webp"><img class="home-research__bg" src="/assets/lab-sunlight-BgBJTyVC.jpg" alt="實驗室研究人員專注進行實驗"></picture>
   <div class="container home-research__inner">
     <div class="home-research__copy" data-reveal>
       <div class="bg-word-heading">
@@ -502,7 +524,7 @@
           <div class="criteria-facts__fig criteria-facts__fig--center" data-progress>
             <span class="criteria-facts__label">認證完整度</span>
             <span class="criteria-facts__value"><span data-progress-num>100</span><small>%</small></span>
-            <span class="criteria-facts__bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="認證完整度"><i data-progress-bar style="width:100%"></i></span>
+            <span class="criteria-facts__bar meter meter--brand" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="認證完整度"><i class="meter__fill" data-progress-bar style="width:100%"></i></span>
           </div>
           <div class="criteria-facts__side">
             <ul class="criteria-checks">
