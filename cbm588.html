@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>醫療級酪酸菌 CBM588 — 妙利散® MIYARISAN</title>
+  <!-- Favicon：沿用原站 miyarisan.com.tw 的 BM 圖示，重新向量化並加上圓角。
+     SVG 為主，PNG 給不支援 SVG 的瀏覽器；apple-touch-icon 保持方形（iOS 會自己裁圓角）。檔案放在 public/ -->
+<link rel="icon" href="/new-miyarisan/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/new-miyarisan/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/new-miyarisan/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+
+  <script type="module" crossorigin src="/new-miyarisan/assets/main-BqpWhUBs.js"></script>
+  <link rel="stylesheet" crossorigin href="/new-miyarisan/assets/main-DLP-1OUm.css">
+</head>
+<!-- 醫療酪酸菌頁｜文案：文案全集第 3 節｜區塊順序同設計簡報第 4 節（C1–C10）
+     圖片目前都是素材預留框（.ph，樣式：components/asset-placeholder.css），框內標了素材編號、比例尺寸與建議畫面 -->
+<body class="page-cbm588">
+  <!-- ==========================================================
+  Icon sprite：放在 <body> 最前面一次，各處用
+  <svg class="icon" style="--size:44px"><use href="#i-shield"/></svg>
+  每個 icon = 漸層實心（url(#grad-brand)）+ 白色細節線
+=========================================================== -->
+<svg class="sr-only" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="grad-brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BB0138"/>
+      <stop offset="1" stop-color="#E5368D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 日本：富士山＋旭日（強調「日本」形象，用於日本原廠製造） -->
+  <symbol id="i-japan" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M17.6 2.2a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2z M1.6 20.2 8.7 9.4c.7-1.1 2.2-1.1 2.9 0l.5.8.6-.6c.6-.6 1.6-.6 2.2.1l7.5 10.5c.4.6 0 1.3-.7 1.3H2.3c-.7 0-1.1-.8-.7-1.3z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M7.1 13.2l1.7 1 1.6-1.4 1.6 1.4 1.7-1.3 1.6 1.1"/>
+  </symbol>
+
+  <symbol id="i-shield" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M11.3 2.2a2 2 0 0 1 1.4 0l6.6 2.5a1.5 1.5 0 0 1 1 1.4V11c0 5-3.3 8.9-7.7 10.7a1.6 1.6 0 0 1-1.2 0C7 19.9 3.7 16 3.7 11V6.1a1.5 1.5 0 0 1 1-1.4z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M8.4 11.8l2.6 2.6 4.6-5"/>
+  </symbol>
+
+  <symbol id="i-hospital" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M7 2.5h10A2.5 2.5 0 0 1 19.5 5v14.5A1.5 1.5 0 0 1 18 21H6a1.5 1.5 0 0 1-1.5-1.5V5A2.5 2.5 0 0 1 7 2.5z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M12 6.5v5.5 M9.25 9.25h5.5 M10 21v-3.2a2 2 0 0 1 4 0V21"/>
+  </symbol>
+
+  <symbol id="i-flask" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M9 2h6a1.2 1.2 0 0 1 0 2.4h-.4v4.2l5.2 9.2a2.2 2.2 0 0 1-1.9 3.2H6.1a2.2 2.2 0 0 1-1.9-3.2l5.2-9.2V4.4H9A1.2 1.2 0 0 1 9 2z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M7.4 14.6h9.2 M10.5 17.8h.01 M13.8 17.2h.01"/>
+  </symbol>
+
+  <symbol id="i-capsule" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M10.2 20.4a5.2 5.2 0 0 1-7.4-7.4l6.5-6.5a5.2 5.2 0 0 1 7.4 7.4z M19 1.8l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M6.1 9.7l7.9 7.9 M5.6 15.4l1.8-1.8"/>
+  </symbol>
+
+  <symbol id="i-award" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M12 1.8a6.6 6.6 0 1 1 0 13.2 6.6 6.6 0 0 1 0-13.2z M8 15.2l-1.5 5.9a.7.7 0 0 0 1 .8L12 19.8l4.5 2.1a.7.7 0 0 0 1-.8L16 15.2a8.4 8.4 0 0 1-8 0z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M9.3 8.5l1.8 1.8 3.6-3.6"/>
+  </symbol>
+
+  <symbol id="i-doc" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M7 2h7.6c.5 0 1 .2 1.4.6l3.4 3.4c.4.4.6.9.6 1.4V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M8.5 12.5h7 M8.5 16h4.5 M14.5 2.5V6a1.5 1.5 0 0 0 1.5 1.5h3.5"/>
+  </symbol>
+
+  <symbol id="i-check" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M12 2.2a9.8 9.8 0 1 1 0 19.6 9.8 9.8 0 0 1 0-19.6z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M7.8 12.3l2.8 2.8 5.6-5.8"/>
+  </symbol>
+
+  <!-- 專利：證書＋圓形印章與緞帶（研發團隊「日本雙專利認證」） -->
+  <symbol id="i-patent" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M4 3.5h16a2 2 0 0 1 2 2v6.6a6 6 0 0 0-9.7 6.4H4a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2z M17.6 12.2a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8z M15.5 20.6l-.9 2.7 3-1.1 3 1.1-.9-2.7z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M5.6 8h9 M5.6 11.6h5.4 M15.8 16.7l1.3 1.3 2.3-2.5"/>
+  </symbol>
+
+  <!-- 臨床研究：病歷夾＋長條圖（研發團隊「RCT 臨床研究支持」） -->
+  <symbol id="i-clinical" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M7 3.6h1.6a3.4 3.4 0 0 1 6.8 0H17a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5.6a2 2 0 0 1 2-2z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M9.6 4.6h4.8 M8.8 17.6v-3 M12 17.6v-6.2 M15.2 17.6v-4.4"/>
+  </symbol>
+
+  <!-- 菌株：斜放的桿菌（cbm588「菌株層級精確」） -->
+  <symbol id="i-strain" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M15.6 3.3a5 5 0 0 1 5.1 5.1L8.4 20.7a5 5 0 0 1-7.1-7.1z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M7.6 12.8l1.4 1.4 M11 9.4l1.4 1.4 M14.4 6l1.4 1.4"/>
+  </symbol>
+
+  <!-- 溫度計（cbm588「耐酸耐熱性佳」） -->
+  <symbol id="i-thermo" viewBox="0 0 24 24">
+    <path fill="url(#grad-brand)" d="M12 1.8a3.4 3.4 0 0 1 3.4 3.4v8.3a5.4 5.4 0 1 1-6.8 0V5.2A3.4 3.4 0 0 1 12 1.8z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.8)" d="M12 6.4v8.4 M12 17.6h.01"/>
+  </symbol>
+
+  <!-- 純線條勾勾（顏色、粗細由使用處的 CSS stroke 決定） -->
+  <symbol id="i-tick" viewBox="0 0 24 24">
+    <path d="M5 12.5l4.5 4.5L19 7.5"/>
+  </symbol>
+
+  <!-- 按鈕用 -->
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14 M13 6l6 6-6 6"/>
+  </symbol>
+
+  <!-- LINE 圖示：顏色可用 --line-fg（對話框）／--line-mark（LINE 字樣）覆寫，預設白底綠字（放在綠色按鈕上） -->
+  <symbol id="i-line" viewBox="0 0 24 24">
+    <path style="fill: var(--line-fg, #fff)" d="M12 3.5c5 0 9 3.2 9 7.2s-4 7.1-9 7.1c-.7 0-1.4-.1-2-.2l-3.6 2.3c-.4.3-.9-.1-.8-.5l.5-2.9C4.3 15.2 3 13.1 3 10.7c0-4 4-7.2 9-7.2z"/>
+    <path style="fill: none; stroke: var(--line-mark, #06C755)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" d="M8 9.5v3h1.6 M11.3 9.5v3 M13.2 12.5v-3l2.2 3v-3"/>
+  </symbol>
+</svg>
+
+  <!-- 全站 Header｜文案：文案全集 1.1
+     平板以下（< 1024）選單收進漢堡按鈕，點開為全螢幕選單（JS：src/js/site-menu.js；樣式：site-header.css） -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__logo" href="index.html">
+      <!-- 妙利散 MIYARISAN 主 Logo（素材：logo2.svg，已最佳化：只保留單一路徑，顏色改由 CSS 控制）
+     顏色跟著 CSS color 走（fill="currentColor"）：header 用 Logo 紅、footer 用白色
+     用法：在頁面寫 include 這個檔案，並傳入 class（例如 site-header__logo-svg） -->
+<svg class="logo site-header__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.02 79.11" role="img" aria-label="妙利散® MIYARISAN"><path fill="currentColor" fill-rule="evenodd" d="M114.49,79.11C65.19,79.11,0,69.15,0,51.07c0-7.17,11.4-13.2,28.13-17.81-4.24-3.41-6.96-8.7-6.96-14.65C21.17,8.36,29.32,0,39.35,0s18.18,8.36,18.18,18.61c0,3.27-.83,6.35-2.28,9.03,19.23-2.99,40.63-4.61,59.24-4.61,47.65,0,114.52,9.48,114.52,28.04s-69.88,28.04-114.52,28.04ZM24.32,67.14h5.94l3.11-17.38,3.31,13.55-.04.14h.08l.9,3.69h3.74l5.43-16.43.99,16.43h5.47l-1.56-28.45h-5.75l-6.09,18.53-3.99-18.53h-6.18l-5.38,28.45ZM56.56,18.61c0-9.48-7.36-17.16-16.53-17.55v2.66c7.73.38,13.58,7.03,13.58,15.03s-5.75,13.64-13.01,14.54v-.99c6.54-.9,12.06-6.2,12.06-13.69s-5.8-13.96-13.3-13.96-13.64,6.28-13.64,13.96c0,6.66,4.89,12.92,11.79,13.6v.99c-7.44-.69-12.75-7.36-12.75-14.6,0-7.69,5.73-13.98,13.04-14.79V1.16c-8.75.81-15.65,8.29-15.65,17.45,0,9.72,7.72,17.64,17.21,17.64s17.21-7.92,17.21-17.64ZM59.66,38.69l-4.9,28.49h5.33l4.89-28.49h-5.32ZM83.53,38.69l-5.75,8.22-.26.38c-.29.42-.77,1.11-1.28,1.89-.17-.51-.36-1.08-.62-1.83l-3.06-8.67h-6.05l5.96,16.35-2.09,12.14h5.34l2-11.73,12.17-16.76h-6.36ZM98.08,38.69h-4.81l-13.68,28.49h5.72l3.66-7.89h6.78l1.07,7.89h5.69l-4.43-28.49ZM122.84,39.52c-1.52-.76-3.1-.83-4.59-.83h-10.27l-4.9,28.49h5.33l1.97-11.44h2.1c1.66,0,2.22,0,3.98,5.22l2.08,6.22h6.15l-3.02-8.77c-.58-1.71-1.19-2.86-1.81-3.68,3.15-1.21,5.18-3.79,5.82-7.45.59-3.5-.51-6.55-2.84-7.77ZM131.83,38.69l-4.91,28.49h5.32l4.91-28.49h-5.32ZM155.25,40.79c-1.39-1.64-3.53-2.5-6.22-2.5-5,0-8.92,3.3-9.76,8.21-1.09,6.34,4.01,7.88,6.44,8.62,4.35,1.37,4.86,1.77,4.57,3.48-.43,2.46-2.71,3.34-4.69,3.34-.75,0-3.24-.17-3.77-2.36-.14-.55-.17-1.28-.07-2.17l.16-1.6-5.21.61-.14,1.17c-.09.7-.24,1.88,0,3.38.74,4.4,3.64,6.63,8.63,6.63s9.36-3.62,10.27-8.8c1.17-6.82-4.16-8.38-7.69-9.42-3.64-1.05-3.55-1.58-3.36-2.64.43-2.52,3.1-2.79,4.23-2.79s1.98.26,2.44.76c.61.69.58,1.9.5,2.75l-.15,1.55,5.19-.48.15-1.01c.4-2.77-.12-5.1-1.5-6.73ZM172.71,38.69h-4.83l-13.68,28.49h5.73l3.65-7.89h6.79l1.09,7.89h5.68l-4.43-28.49ZM197.03,38.69l-2.75,15.99-6.25-15.99h-4.75l-4.3,28.49h4.87l2.77-17.39,7.5,17.39h4.25l3.78-28.49h-5.12ZM168.78,48.23c.03-.06.06-.13.09-.19.01.07.02.15.04.23l.74,5.71h-3.6l2.73-5.75ZM118.62,49.61c-.98.47-1.7.47-2.88.47h-4.39l1.03-5.94h5.51c.96,0,1.51.13,1.98.5.38.27.69,1.09.5,2.2-.21,1.19-.96,2.38-1.73,2.77ZM94.16,48.23c.03-.07.06-.14.09-.2.01.08.02.16.04.24l.75,5.71h-3.6l2.72-5.75ZM28.38,20.44l-.08-.59s8.7-.05,9.56-.05v-2.93c-.86,0-9.52.05-9.52.05l.12-.59c.03-.12,2-9.11,10.88-9.11s10.85,8.93,10.85,8.99l.13.62s-9.06-.06-10.15-.08v3.08c1.1.03,10.2.04,10.2.04l-.07.56c-.01.09-1.51,9.52-10.96,9.52s-10.96-9.45-10.97-9.54ZM49.08,15.82c-.43-1.55-2.43-7.59-9.73-7.59s-9.39,6.09-9.77,7.56c1.27,0,18.35.03,19.5.03ZM49.22,20.89c-1.06,0-18.6-.02-19.65,0,.44,1.91,2.4,8.11,9.77,8.11s9.43-6.18,9.87-8.1ZM194.56,26.42c-.75.44-1.56.67-2.42.67s-1.66-.23-2.4-.68c-.75-.45-1.34-1.06-1.78-1.82-.43-.76-.65-1.59-.65-2.47s.21-1.7.65-2.46c.44-.77,1.04-1.38,1.79-1.81.75-.45,1.55-.67,2.4-.67s1.69.22,2.43.67c.75.45,1.33,1.06,1.76,1.83.43.77.64,1.6.64,2.48s-.21,1.7-.65,2.46c-.43.76-1.03,1.36-1.78,1.81ZM195.77,20.01c-.37-.67-.88-1.2-1.52-1.58-.64-.39-1.33-.59-2.08-.59-1.15,0-2.14.42-2.95,1.25-.83.83-1.24,1.85-1.24,3.04,0,.75.18,1.46.56,2.12.37.66.88,1.19,1.53,1.57.65.39,1.34.58,2.1.58,1.12,0,2.09-.41,2.92-1.24.82-.83,1.23-1.85,1.23-3.05,0-.74-.19-1.44-.55-2.11ZM193.56,24.1l-.05-.69c-.02-.35-.09-.57-.21-.68-.12-.11-.42-.16-.88-.16h-1.4v2.37h-.88v-5.69h2.32c.7,0,1.2.12,1.51.37.31.24.47.66.47,1.24s-.24.99-.69,1.25c.22.11.38.25.48.4.1.15.15.45.15.89v.65c0,.27.07.51.2.74l.09.15h-.99c-.06-.22-.1-.49-.12-.84ZM193.3,20.24c-.17-.12-.45-.18-.85-.18h-1.42v1.69h1.37c.4,0,.7-.06.88-.18.18-.13.29-.35.29-.67s-.09-.53-.26-.66Z"/></svg>
+
+    </a>
+    <nav class="site-header__nav" aria-label="主選單">
+      <a href="cbm588.html">醫療酪酸菌</a>
+      <a href="ngp.html">次世代益生菌</a>
+      <a href="twstore.html">購買通路</a>
+      <a href="product.html">產品列表</a>
+      <a href="faq.html">常見問題</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--line" href="https://lin.ee/RuxohDy" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-line"/></svg><span class="btn--line__text">LINE 客服</span>
+      </a>
+      <button class="site-header__toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 全螢幕選單（平板以下）：品牌紅漸層底、白字置中，從漢堡按鈕的位置以圓形展開，連結依序滑入；LINE 客服接在最後一個連結下方（白底 CTA） -->
+  <div class="site-menu" id="site-menu" aria-hidden="true" data-menu>
+    <!-- 裝飾粗圓環（呼應產品包裝上的圓圈） -->
+    <span class="site-menu__ring" aria-hidden="true"></span>
+    <span class="site-menu__ring site-menu__ring--sm" aria-hidden="true"></span>
+    <div class="container site-menu__inner">
+      <a class="site-menu__logo" href="index.html" tabindex="-1">
+        <!-- 妙利散 MIYARISAN 主 Logo（素材：logo2.svg，已最佳化：只保留單一路徑，顏色改由 CSS 控制）
+     顏色跟著 CSS color 走（fill="currentColor"）：header 用 Logo 紅、footer 用白色
+     用法：在頁面寫 include 這個檔案，並傳入 class（例如 site-header__logo-svg） -->
+<svg class="logo site-menu__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.02 79.11" role="img" aria-label="妙利散® MIYARISAN"><path fill="currentColor" fill-rule="evenodd" d="M114.49,79.11C65.19,79.11,0,69.15,0,51.07c0-7.17,11.4-13.2,28.13-17.81-4.24-3.41-6.96-8.7-6.96-14.65C21.17,8.36,29.32,0,39.35,0s18.18,8.36,18.18,18.61c0,3.27-.83,6.35-2.28,9.03,19.23-2.99,40.63-4.61,59.24-4.61,47.65,0,114.52,9.48,114.52,28.04s-69.88,28.04-114.52,28.04ZM24.32,67.14h5.94l3.11-17.38,3.31,13.55-.04.14h.08l.9,3.69h3.74l5.43-16.43.99,16.43h5.47l-1.56-28.45h-5.75l-6.09,18.53-3.99-18.53h-6.18l-5.38,28.45ZM56.56,18.61c0-9.48-7.36-17.16-16.53-17.55v2.66c7.73.38,13.58,7.03,13.58,15.03s-5.75,13.64-13.01,14.54v-.99c6.54-.9,12.06-6.2,12.06-13.69s-5.8-13.96-13.3-13.96-13.64,6.28-13.64,13.96c0,6.66,4.89,12.92,11.79,13.6v.99c-7.44-.69-12.75-7.36-12.75-14.6,0-7.69,5.73-13.98,13.04-14.79V1.16c-8.75.81-15.65,8.29-15.65,17.45,0,9.72,7.72,17.64,17.21,17.64s17.21-7.92,17.21-17.64ZM59.66,38.69l-4.9,28.49h5.33l4.89-28.49h-5.32ZM83.53,38.69l-5.75,8.22-.26.38c-.29.42-.77,1.11-1.28,1.89-.17-.51-.36-1.08-.62-1.83l-3.06-8.67h-6.05l5.96,16.35-2.09,12.14h5.34l2-11.73,12.17-16.76h-6.36ZM98.08,38.69h-4.81l-13.68,28.49h5.72l3.66-7.89h6.78l1.07,7.89h5.69l-4.43-28.49ZM122.84,39.52c-1.52-.76-3.1-.83-4.59-.83h-10.27l-4.9,28.49h5.33l1.97-11.44h2.1c1.66,0,2.22,0,3.98,5.22l2.08,6.22h6.15l-3.02-8.77c-.58-1.71-1.19-2.86-1.81-3.68,3.15-1.21,5.18-3.79,5.82-7.45.59-3.5-.51-6.55-2.84-7.77ZM131.83,38.69l-4.91,28.49h5.32l4.91-28.49h-5.32ZM155.25,40.79c-1.39-1.64-3.53-2.5-6.22-2.5-5,0-8.92,3.3-9.76,8.21-1.09,6.34,4.01,7.88,6.44,8.62,4.35,1.37,4.86,1.77,4.57,3.48-.43,2.46-2.71,3.34-4.69,3.34-.75,0-3.24-.17-3.77-2.36-.14-.55-.17-1.28-.07-2.17l.16-1.6-5.21.61-.14,1.17c-.09.7-.24,1.88,0,3.38.74,4.4,3.64,6.63,8.63,6.63s9.36-3.62,10.27-8.8c1.17-6.82-4.16-8.38-7.69-9.42-3.64-1.05-3.55-1.58-3.36-2.64.43-2.52,3.1-2.79,4.23-2.79s1.98.26,2.44.76c.61.69.58,1.9.5,2.75l-.15,1.55,5.19-.48.15-1.01c.4-2.77-.12-5.1-1.5-6.73ZM172.71,38.69h-4.83l-13.68,28.49h5.73l3.65-7.89h6.79l1.09,7.89h5.68l-4.43-28.49ZM197.03,38.69l-2.75,15.99-6.25-15.99h-4.75l-4.3,28.49h4.87l2.77-17.39,7.5,17.39h4.25l3.78-28.49h-5.12ZM168.78,48.23c.03-.06.06-.13.09-.19.01.07.02.15.04.23l.74,5.71h-3.6l2.73-5.75ZM118.62,49.61c-.98.47-1.7.47-2.88.47h-4.39l1.03-5.94h5.51c.96,0,1.51.13,1.98.5.38.27.69,1.09.5,2.2-.21,1.19-.96,2.38-1.73,2.77ZM94.16,48.23c.03-.07.06-.14.09-.2.01.08.02.16.04.24l.75,5.71h-3.6l2.72-5.75ZM28.38,20.44l-.08-.59s8.7-.05,9.56-.05v-2.93c-.86,0-9.52.05-9.52.05l.12-.59c.03-.12,2-9.11,10.88-9.11s10.85,8.93,10.85,8.99l.13.62s-9.06-.06-10.15-.08v3.08c1.1.03,10.2.04,10.2.04l-.07.56c-.01.09-1.51,9.52-10.96,9.52s-10.96-9.45-10.97-9.54ZM49.08,15.82c-.43-1.55-2.43-7.59-9.73-7.59s-9.39,6.09-9.77,7.56c1.27,0,18.35.03,19.5.03ZM49.22,20.89c-1.06,0-18.6-.02-19.65,0,.44,1.91,2.4,8.11,9.77,8.11s9.43-6.18,9.87-8.1ZM194.56,26.42c-.75.44-1.56.67-2.42.67s-1.66-.23-2.4-.68c-.75-.45-1.34-1.06-1.78-1.82-.43-.76-.65-1.59-.65-2.47s.21-1.7.65-2.46c.44-.77,1.04-1.38,1.79-1.81.75-.45,1.55-.67,2.4-.67s1.69.22,2.43.67c.75.45,1.33,1.06,1.76,1.83.43.77.64,1.6.64,2.48s-.21,1.7-.65,2.46c-.43.76-1.03,1.36-1.78,1.81ZM195.77,20.01c-.37-.67-.88-1.2-1.52-1.58-.64-.39-1.33-.59-2.08-.59-1.15,0-2.14.42-2.95,1.25-.83.83-1.24,1.85-1.24,3.04,0,.75.18,1.46.56,2.12.37.66.88,1.19,1.53,1.57.65.39,1.34.58,2.1.58,1.12,0,2.09-.41,2.92-1.24.82-.83,1.23-1.85,1.23-3.05,0-.74-.19-1.44-.55-2.11ZM193.56,24.1l-.05-.69c-.02-.35-.09-.57-.21-.68-.12-.11-.42-.16-.88-.16h-1.4v2.37h-.88v-5.69h2.32c.7,0,1.2.12,1.51.37.31.24.47.66.47,1.24s-.24.99-.69,1.25c.22.11.38.25.48.4.1.15.15.45.15.89v.65c0,.27.07.51.2.74l.09.15h-.99c-.06-.22-.1-.49-.12-.84ZM193.3,20.24c-.17-.12-.45-.18-.85-.18h-1.42v1.69h1.37c.4,0,.7-.06.88-.18.18-.13.29-.35.29-.67s-.09-.53-.26-.66Z"/></svg>
+
+      </a>
+      <nav class="site-menu__nav" aria-label="主選單">
+        <a href="cbm588.html" tabindex="-1">醫療酪酸菌</a>
+        <a href="ngp.html" tabindex="-1">次世代益生菌</a>
+        <a href="twstore.html" tabindex="-1">購買通路</a>
+        <a href="product.html" tabindex="-1">產品列表</a>
+        <a href="faq.html" tabindex="-1">常見問題</a>
+      </nav>
+      <a class="btn btn--line site-menu__line" href="https://lin.ee/RuxohDy" target="_blank" rel="noopener" tabindex="-1">
+        <svg aria-hidden="true"><use href="#i-line"/></svg>LINE 客服
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+    <!-- CBM588 Hero｜文案：文案全集 3.1｜素材：CBM-HERO-BG（背景）、CBM-HERO-STRAIN（左側菌株主視覺）
+     版型：同首頁的圓角 banner（左右各留白邊），文案依原稿「左側圖片」改為左圖右文；
+     左側主視覺後方疊粗圓環（呼應包裝圓圈）。
+     背景：腸道絨毛 3D 圖極淡疊在粉色漸層上，往上淡出（只隱約看出絨毛，避免不適感）。
+     圓圈：菌株增生五階段輪播（stage1→5，每張 5 秒），細胞縮在圓圈內；
+     菌體有微小不規則位移（hero.css 的 cbm-cell-*）。
+     < 1024：主視覺在上、文案在下置中 -->
+<section class="cbm-hero" id="hero">
+  <div class="cbm-hero__bg" aria-hidden="true">
+    <picture>
+      <source type="image/webp" srcset="/new-miyarisan/assets/hero-villi-NsiZ_mW3.webp">
+      <img class="cbm-hero__bg-img" src="/new-miyarisan/assets/hero-villi-BbBckn60.jpg" alt="" width="3744" height="2340" decoding="async">
+    </picture>
+  </div>
+
+  <div class="cbm-hero__grid">
+    <div class="cbm-hero__visual">
+      <svg class="cbm-hero__ring" viewBox="0 0 500 500" aria-hidden="true">
+        <defs>
+          <linearGradient id="cbm-ring-grad" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#BB0138"/>
+            <stop offset=".55" stop-color="#E5368D"/>
+            <stop offset="1" stop-color="#C9B2E6"/>
+          </linearGradient>
+        </defs>
+        <circle cx="250" cy="250" r="222" stroke-width="44" stroke="url(#cbm-ring-grad)"/>
+      </svg>
+      <div class="cbm-hero__strain" role="img" aria-label="CBM588 酪酸菌菌株">
+        <!-- 襯底：細胞流體氛圍（純 CSS）＝慢轉的柔光流、斜向排列的小囊泡 pattern、往上飄的微粒 -->
+        <div class="cbm-hero__fluid" aria-hidden="true"><span class="cbm-hero__fluid-flow"></span><span class="cbm-hero__fluid-vesicle"></span><span class="cbm-hero__fluid-dust"></span></div>
+        <!-- 五階段輪播（圖片底色已轉白，CSS 用 multiply 疊上，襯底會透過菌體玻璃殼）：第一張帶 is-active；data-interval 改了要同步 hero.css 的說明 -->
+        <div class="cbm-hero__slides" data-slideshow data-interval="5000" aria-hidden="true">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/strain-stage1-B4hSmn1Z.webp"><img class="cbm-hero__slide is-active" src="/new-miyarisan/assets/strain-stage1-BSXy-f4d.jpg" alt="" width="1260" height="1260" fetchpriority="high"></picture>
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/strain-stage2-DyUWgTvC.webp"><img class="cbm-hero__slide" src="/new-miyarisan/assets/strain-stage2-BBaqV1ch.jpg" alt="" width="1260" height="1260" decoding="async"></picture>
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/strain-stage3-D4_taHFI.webp"><img class="cbm-hero__slide" src="/new-miyarisan/assets/strain-stage3-B7EfusGV.jpg" alt="" width="1260" height="1260" decoding="async"></picture>
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/strain-stage4-xFcqFnSP.webp"><img class="cbm-hero__slide" src="/new-miyarisan/assets/strain-stage4-d-QttdIP.jpg" alt="" width="1260" height="1260" decoding="async"></picture>
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/strain-stage5-qYMRghpT.webp"><img class="cbm-hero__slide" src="/new-miyarisan/assets/strain-stage5-muRPJvkJ.jpg" alt="" width="1260" height="1260" decoding="async"></picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="cbm-hero__copy">
+      <span class="tag-pill">
+        <svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>日本醫療級認證菌株・80+ 年臨床使用
+      </span>
+
+      <h1 class="cbm-hero__title">
+        <span class="cbm-hero__title-zh"><em class="text-grad">酪酸菌</em><em class="accent">・</em><br>專利菌株</span>
+        <em class="cbm-hero__title-en text-grad">CBM588</em>
+      </h1>
+
+      <p class="lead">妙利散專利菌株，具備芽孢結構，<br>耐酸、耐熱、可與抗生素同時使用</p>
+
+      <div class="btn-group">
+        <a class="btn btn--primary btn--arrow btn--pulse" href="#criteria">了解菌株特色<span class="btn__arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn btn--secondary" href="#evidence">查看文獻報告</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CBM588 信任列｜文案：文案全集 3.2｜樣式：components/trust-bar.css（兩行版：主文字＋副文字） -->
+<section class="trust-bar trust-bar--overlap container" aria-label="CBM588 菌株特點">
+  <div class="trust-bar__item"><svg class="icon" aria-hidden="true"><use href="#i-strain"/></svg><div class="trust-bar__text"><span>菌株層級精確</span><small>可追溯試驗</small></div></div>
+  <div class="trust-bar__item"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><div class="trust-bar__text"><span>胃酸pH 1.4 可存活</span><small>芽孢耐胃酸</small></div></div>
+  <div class="trust-bar__item"><svg class="icon" aria-hidden="true"><use href="#i-capsule"/></svg><div class="trust-bar__text"><span>耐抗生素無礙</span><small>療程中不失效</small></div></div>
+  <div class="trust-bar__item"><svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg><div class="trust-bar__text"><span>耐酸耐熱性佳</span><small>芽孢結構穩定</small></div></div>
+</section>
+
+    <!-- CBM588 醫療級定義｜文案：文案全集 3.3＋3.4 中段橫幅（素材 CBM-MID-BANNER）
+     版型：左欄標題＋定義＋標籤＋產品大小盒（不固定；class 名 __sticky 為舊名沿用），右欄 01–03 三個條件往下捲（左正方形小圖＋右小編號／標題／內文，分隔線，不做卡片）；
+     三張小圖：01 DNA 螺旋環繞桿菌（crit-strain）／02 胃部剖面（crit-acid，原圖 16:9 已裁正方形）／03 玻璃資料板圖表（crit-clinical）
+     同一區塊底部接滿版圓角橫幅，下一區（雙重優勢）往上疊入橫幅下緣。
+     原稿 <em> 強調字（pH 1.4 環境、1940 年）改用 .text-mark 螢光底線；學名用 <i>。
+     < 1024：標題在上、三點在下 -->
+<section class="cbm-criteria" id="criteria">
+  <div class="container cbm-criteria__grid">
+    <div class="cbm-criteria__head">
+      <div class="cbm-criteria__sticky" data-reveal>
+        <span class="eyebrow">MEDICAL GRADE</span>
+        <h2 class="h2">什麼讓一個菌株<br>稱得上<span class="text-grad">「醫療級」</span>？</h2>
+        <hr class="cbm-rule">
+        <p class="body">超越醫療級：活性生物製劑（LBP，Live Biotherapeutic Product）是以活菌為主成分、通過藥品審查程序取得藥證的治療性醫療製劑。</p>
+        <div class="tag-list">
+          <span class="tag-pill"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>衛署藥輸字號藥品</span>
+          <span class="tag-pill"><svg class="icon" aria-hidden="true"><use href="#i-strain"/></svg>菌株層級可追溯</span>
+          <span class="tag-pill"><svg class="icon" aria-hidden="true"><use href="#i-japan"/></svg>日本 1940 年核准製造</span>
+        </div>
+        <!-- 產品大小盒（靜態，擺法同首頁 pack-stack 的完成狀態，不含內包裝） -->
+        <div class="cbm-criteria__packs" role="img" aria-label="妙利散 BM 產品包裝">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/pack-large-EZof9qDq.webp"><img class="cbm-criteria__pack-large" src="/new-miyarisan/assets/pack-large-BP_WQuV5.png" alt="" width="720" height="826" loading="lazy" decoding="async"></picture>
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/pack-small-BLSab3fW.webp"><img class="cbm-criteria__pack-small" src="/new-miyarisan/assets/pack-small-BBuFS2m5.png" alt="" width="1000" height="461" loading="lazy" decoding="async"></picture>
+        </div>
+      </div>
+    </div>
+
+    <ol class="cbm-criteria__list">
+      <li class="cbm-criteria__item" data-reveal>
+        <figure class="cbm-criteria__thumb">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/crit-strain-D96cBOSO.webp"><img src="/new-miyarisan/assets/crit-strain-CvvAnudA.jpg" alt="菌株身份精確可追溯" width="440" height="440" loading="lazy" decoding="async"></picture>
+        </figure>
+        <div class="cbm-criteria__body">
+          <span class="cbm-criteria__num">01</span>
+          <h3 class="cbm-criteria__title">菌株身份精確可追溯</h3>
+          <p class="body">必須精確到菌株層級（genus, species, strain），才能對應可重複驗證的臨床試驗。CBM588 的全名 <i>Clostridium butyricum</i> MIYAIRI 588 對應到上百篇期刊論文的精確微生物身份，不是行銷詞彙。</p>
+        </div>
+      </li>
+      <li class="cbm-criteria__item" data-reveal>
+        <figure class="cbm-criteria__thumb">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/crit-acid-DROile1h.webp"><img src="/new-miyarisan/assets/crit-acid-Cmn12BhO.jpg" alt="胃部剖面示意圖" width="440" height="440" loading="lazy" decoding="async"></picture>
+        </figure>
+        <div class="cbm-criteria__body">
+          <span class="cbm-criteria__num">02</span>
+          <h3 class="cbm-criteria__title">生物環境穩定性</h3>
+          <p class="body">益生菌必須穿越胃酸（pH 1.5–3.5）才能抵達結腸。CBM588 以芽孢形式通過胃腸屏障，即使在空腹胃酸 <em class="text-mark">pH 1.4 環境</em> 下仍可存活，且可與抗生素同時使用而不失效。</p>
+        </div>
+      </li>
+      <li class="cbm-criteria__item" data-reveal>
+        <figure class="cbm-criteria__thumb">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/crit-clinical-DkSgjd-3.webp"><img src="/new-miyarisan/assets/crit-clinical-xc6PNeyb.jpg" alt="人體臨床試驗研究資料" width="440" height="440" loading="lazy" decoding="async"></picture>
+        </figure>
+        <div class="cbm-criteria__body">
+          <span class="cbm-criteria__num">03</span>
+          <h3 class="cbm-criteria__title">人體臨床試驗數據</h3>
+          <p class="body">需要針對特定疾病、特定適應症，以人體受試者為基礎的臨床研究，而非僅著眼在體外或動物實驗層次。CBM588 在日本自 <em class="text-mark">1940 年</em>起被核准為處方藥，涵蓋兒科、中高齡等多項臨床試驗。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- 3.4 中段橫幅：比照 Hero 的圓角 banner（左右留白邊），下方被「雙重優勢」區塊疊入 --overlap
+       圖：櫻花樹下三代同堂野餐（banner-picnic），輕微捲動視差（JS：src/js/parallax.js）。
+       原稿 alt「日本製藥級實驗室——…」與新圖內容不符，暫以裝飾圖處理（alt 空白），待文案確認 -->
+  <div class="cbm-banner" data-reveal>
+    <div class="cbm-banner__media" data-parallax>
+      <picture>
+        <source type="image/webp" srcset="/new-miyarisan/assets/banner-picnic-Dbzm7ha1.webp">
+        <img class="cbm-banner__img" src="/new-miyarisan/assets/banner-picnic-Cb3qRERq.jpg" alt="" width="3072" height="2048" loading="lazy" decoding="async">
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <!-- CBM588 雙重優勢｜文案：文案全集 3.5｜素材：CBM-DUAL-BUTYRATE、CBM-DUAL-SPORE
+     版型：標題置中（背後英文裝飾大字），下方兩張大卡左右並排、中間一顆「×」圓章把兩種特性連起來；
+     每張卡：上圖＋眉標（英文裝飾字，同全站 .eyebrow）＋標題＋內文＋重點標籤。往上疊入中段橫幅（大圓弧左上角）。
+     < 1024：兩張卡上下排，× 圓章移到兩卡之間 -->
+<section class="cbm-features" id="features">
+  <div class="container cbm-features__inner">
+    <div class="cbm-features__head" data-reveal>
+      <div class="bg-word-heading">
+        <span class="bg-word" aria-hidden="true">DUAL</span>
+        <div class="cbm-features__title">
+          <span class="eyebrow">DUAL ADVANTAGE</span>
+          <h2 class="h2"><span class="text-grad">酪酸菌</span> × <span class="text-grad">芽孢菌</span>的雙重優勢</h2>
+        </div>
+      </div>
+      <p class="subtitle">CBM588 同時具備兩種特性，而這兩種特性在市售益生菌中幾乎不會同時出現。</p>
+    </div>
+
+    <!-- 進場動畫掛在外層：× 圓章與兩張卡一起移動，不會單獨浮著或錯位 -->
+    <div class="cbm-features__cards" data-reveal>
+      <article class="dual-card">
+        <div class="dual-card__media">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/dual-butyrate-BBH9hCrA.webp"><img class="dual-card__img" src="/new-miyarisan/assets/dual-butyrate-bKXXKf_Y.jpg" alt="桿狀酪酸菌 Clostridium butyricum" width="1360" height="762" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="dual-card__body">
+          <div class="dual-card__head"><span class="eyebrow">BUTYRATE PRODUCER</span><h3 class="card__title">酪酸菌 — 大量產生 Butyrate</h3></div>
+          <p class="body"><i>Clostridium butyricum</i> 的代謝終產物是「酪酸」（butyrate），而非一般乳酸菌所產生的乳酸。酪酸是大腸上皮細胞最主要的能量來源，提供結腸細胞約 <strong class="text-mark">50～70% 的 ATP 產能</strong>，同時具備調節腸道環境的功能，是乳酸在生化機制上無法替代的分子。</p>
+          <div class="tag-list">
+            <span class="tag-pill tag-pill--grey tag-pill--check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>結腸細胞主要能量來源</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- × 用 SVG 畫（文字 × 會依字型偏移），兩條線端點圓角 -->
+      <span class="cbm-features__x" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span>
+
+      <article class="dual-card">
+        <div class="dual-card__media">
+          <!-- 原圖正方形，cover 裁成 16:10；object-position 讓芽孢主體留在框內（features.css .dual-card__img--spore） -->
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/dual-spore-D77fnkh-.webp"><img class="dual-card__img dual-card__img--spore" src="/new-miyarisan/assets/dual-spore-iDMqmmWl.jpg" alt="CBM588 芽孢剖面結構" width="1210" height="1210" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="dual-card__body">
+          <div class="dual-card__head"><span class="eyebrow">SPORE FORMING</span><h3 class="card__title">芽孢菌 — 待機觸發啟動機制</h3></div>
+          <p class="body">CBM588 擁有獨特的「芽孢」結構，能順利通過 pH 1.4 的強酸胃環境，不畏胃酸與膽鹽的考驗。抵達結腸後偵測到特定化學訊號（如 L-丙胺酸），才啟動萌發，轉化為具備完整代謝活性的強效活菌。獨特的物理結構讓 CBM588 不需冷藏保存，即可確保活菌直達腸道，發揮守護力。</p>
+          <div class="tag-list">
+            <span class="tag-pill tag-pill--grey tag-pill--check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>無需冷藏，室溫穩定保存</span>
+            <span class="tag-pill tag-pill--grey tag-pill--check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>空腹可服用</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- CBM588 比較表｜文案：文案全集 3.6
+     版型：主流「方案比較表」——左欄比較項目、中欄一般市售（灰、淡化）、右欄 CBM588 整欄浮起成白卡（品牌漸層表頭＋勾選），
+     視線自然落在右欄。表格註跟著表格一起保留。往上疊入雙重優勢（大圓弧右上角、藍色調柔影）。
+     < 768：改成每個比較項目一張小卡（項目名在上，下方兩欄並排：一般市售／CBM588） -->
+<section class="cbm-compare" id="compare">
+  <div class="container cbm-compare__inner">
+    <div class="cbm-compare__head" data-reveal>
+      <span class="eyebrow">HEAD TO HEAD</span>
+      <h2 class="h2"><span class="text-grad">CBM588</span> vs. 市售益生菌</h2>
+      <p class="subtitle">以非芽孢形態益生菌在市售標準下的代表性趨勢作為比較基準</p>
+    </div>
+
+    <div class="compare" data-reveal>
+      <table class="compare__table">
+        <thead>
+          <tr>
+            <th scope="col" class="compare__corner">比較項目</th>
+            <th scope="col" class="compare__other">一般市售益生菌</th>
+            <th scope="col" class="compare__cbm"><span class="compare__cbm-head"><span class="compare__cbm-en" aria-hidden="true">MIYAIRI 588</span>CBM588 宮入菌</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">菌株精確度</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>多為菌種層級，批次差異大</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>精確到菌株層級，可追溯試驗</td>
+          </tr>
+          <tr>
+            <th scope="row">耐酸</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>普遍無法通過空腹胃酸，需藉由食物中和胃酸</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>pH 1.4 強胃酸下仍可存活</td>
+          </tr>
+          <tr>
+            <th scope="row">產生酪酸</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>主要產乳酸，不具酪酸功能</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>大量產生酪酸，結腸黏膜主要能量</td>
+          </tr>
+          <tr>
+            <th scope="row">抗生素同服</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>必須間隔服用，活性易受損，療程易中斷</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>可同時服用，療程中不失效，簡化服藥流程</td>
+          </tr>
+          <tr>
+            <th scope="row">保存條件</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>多需冷藏，低溫保存</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>室溫穩定，無需冷藏</td>
+          </tr>
+          <tr>
+            <th scope="row">促進好菌</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>因品牌而異</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>促進腸道 A 菌 / B 菌增殖</td>
+          </tr>
+          <tr>
+            <th scope="row">醫療研究基礎</th>
+            <td class="compare__other" data-label="一般市售益生菌"><span class="compare__mark compare__mark--no" aria-hidden="true"></span>文獻品質參差，多為基礎食品研究</td>
+            <td class="compare__cbm" data-label="CBM588 宮入菌"><span class="compare__mark" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>半世紀以上的醫學實證，多科別臨床驗證</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="cbm-note">乳酸菌種類繁多且表現各異，本表僅供概括性比較。各產品實際功效，建議參閱單一菌株之專屬科學實證。</p>
+  </div>
+</section>
+
+    <!-- CBM588 數據列｜文案：文案全集 3.7｜樣式：components/stats-band.css（和首頁共用） -->
+<section class="stats-band">
+  <div class="stats-band__deco" aria-hidden="true"></div>
+  <div class="container stats-band__grid">
+    <div class="stats-band__item"><span class="stats-band__key">SUBJECTS</span><span class="stats-band__value">600+</span><span class="stats-band__desc">功能性腸道症狀受試者</span></div>
+    <div class="stats-band__item"><span class="stats-band__key">ERADICATION</span><span class="stats-band__value">94%</span><span class="stats-band__desc"><i>H. pylori</i> 除菌成功率（+CBM588）</span></div>
+    <div class="stats-band__item"><span class="stats-band__key">ADR RATE</span><span class="stats-band__value">2.9%</span><span class="stats-band__desc">抗生素腹瀉發生率</span></div>
+    <div class="stats-band__item"><span class="stats-band__key">CURE RATE</span><span class="stats-band__value">77.8%</span><span class="stats-band__desc">整腸症狀綜合治癒率</span></div>
+  </div>
+</section>
+
+    <!-- CBM588 穩定性｜文案：文案全集 3.8（原稿無眉標，英文大字 STABILITY 為裝飾）
+     版型：左欄標題＋三個重點（icon＋標題＋內文，分隔線條列，不做卡片）；右欄兩張圖表面板上下排：
+       圖表 1 耐酸性：橫向長條圖（89%／18%／18%），進入畫面時由左往右長出（CSS：.is-visible）
+       圖表 2 熱穩定性：資料表，每格數值下方加迷你長條（數值與單位照原稿，長條只是視覺輔助）
+     圖註、表尾、說明照原稿保留，不可省略。
+     < 1024：上下堆疊（標題與三點在上、圖表在下） -->
+<section class="cbm-stability" id="stability">
+  <div class="container cbm-stability__grid">
+    <div class="cbm-stability__head">
+      <div class="bg-word-heading" data-reveal>
+        <span class="bg-word bg-word--blue" aria-hidden="true">STABILITY</span>
+        <h2 class="h2">醫療情境<span class="text-grad">依舊可活</span></h2>
+      </div>
+      <p class="subtitle" data-reveal>芽孢結構讓 CBM588 在多數益生菌失效的環境下，依然能維持活性。</p>
+
+      <ul class="cbm-points">
+        <li class="cbm-points__item" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg>
+          <div>
+            <h3 class="cbm-points__title">耐酸耐熱性</h3>
+            <p class="body">芽孢形式在胃酸環境下展現出顯著較高的存活特性，乳酸菌在相同條件下存活率偏低，為代表性趨勢比較。</p>
+          </div>
+        </li>
+        <li class="cbm-points__item" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-capsule"/></svg>
+          <div>
+            <h3 class="cbm-points__title">抗生素相容</h3>
+            <p class="body">多數非芽孢益生菌在抗生素療程中存活率偏低。CBM588 的芽孢結構特性使其在抗生素環境下維持活性，可於療程中同步服用。</p>
+          </div>
+        </li>
+        <li class="cbm-points__item" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+          <div>
+            <h3 class="cbm-points__title">室溫穩定保存</h3>
+            <p class="body">芽孢型態不需冷鏈保存，在日本醫療體系持續使用逾 80 年。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cbm-stability__charts">
+      <!-- 圖表 1：耐酸性比較（長條比例 89／18／18，同文案全集 3.8；寬度寫在 --w） -->
+      <figure class="chart-panel" data-reveal>
+        <figcaption class="chart-panel__head">
+          <span class="chart-panel__tag">CHART 01</span>
+          <h3 class="chart-panel__title">耐酸性比較（pH 1.4 環境，菌株存活狀況）</h3>
+        </figcaption>
+        <ul class="acid-chart">
+          <li class="acid-chart__row acid-chart__row--cbm" style="--w:89%">
+            <span class="acid-chart__name">CBM588（芽孢形式）</span>
+            <span class="acid-chart__track meter meter--brand"><span class="acid-chart__bar meter__fill"></span></span>
+            <span class="acid-chart__result">顯著較高</span>
+          </li>
+          <li class="acid-chart__row" style="--w:18%">
+            <span class="acid-chart__name"><i>Lactobacillus acidophilus</i></span>
+            <span class="acid-chart__track meter"><span class="acid-chart__bar meter__fill"></span></span>
+            <span class="acid-chart__result">偏低</span>
+          </li>
+          <li class="acid-chart__row" style="--w:18%">
+            <span class="acid-chart__name"><i>Enterococcus faecalis</i></span>
+            <span class="acid-chart__track meter"><span class="acid-chart__bar meter__fill"></span></span>
+            <span class="acid-chart__result">偏低</span>
+          </li>
+        </ul>
+        <p class="chart-panel__note">＊各菌株表現差異大，本圖為代表性趨勢示意，不代表所有產品。</p>
+      </figure>
+
+      <!-- 圖表 2：熱穩定性試驗。迷你長條高度＝係數 ÷ 6（最大值 6×10⁷），寫在 --v -->
+      <figure class="chart-panel" data-reveal>
+        <figcaption class="chart-panel__head">
+          <span class="chart-panel__tag">CHART 02</span>
+          <h3 class="chart-panel__title">熱穩定性試驗 — 活菌數隨時間變化</h3>
+          <span class="chart-panel__unit">時間軸：立刻 → 60 分鐘</span>
+        </figcaption>
+        <div class="heat-table__wrap">
+          <table class="heat-table">
+            <thead>
+              <tr><th scope="col">溫度條件</th><th scope="col">立刻</th><th scope="col">10 分</th><th scope="col">30 分</th><th scope="col">60 分</th></tr>
+            </thead>
+            <tbody>
+              <tr class="heat-table__row--room">
+                <th scope="row">常溫水</th>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:1"><span>6×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+              </tr>
+              <tr class="heat-table__row--52">
+                <th scope="row">52°C</th>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.83"><span>5×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.67"><span>4×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+              </tr>
+              <tr class="heat-table__row--55">
+                <th scope="row">55°C</th>
+                <td style="--v:.67"><span>4×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.67"><span>4×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.5"><span>3×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+                <td style="--v:.67"><span>4×10⁷</span><i class="meter meter--mini" aria-hidden="true"><b class="meter__fill"></b></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="heat-table__foot">活菌數（CFU）</p>
+        <p class="chart-panel__note">將宮入菌 CBM588 （活菌數 4.0 x 10⁷ CFU）置於不同水溫環境，檢測其存活菌數。結果證實宮入菌具備優異的耐熱特質，能克服高溫環境挑戰。</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- CBM588 臨床實證｜文案：文案全集 3.9｜素材：CBM-EVIDENCE-PHOTO
+     版型（2026-11 改為 demo B 版）：標題列左＝標題＋說明、右＝參考文獻；
+     下方不對稱拼貼：01 主卡（照片在上，跨兩列）＋02、03 副卡疊右側。往上疊入穩定性區（大圓弧左上角）；
+     行動呼籲 CTA 色帶接在同一區塊底部（同首頁）。
+     < 1024：標題列與研究卡都改一欄（文獻接在說明下方） -->
+<section class="cbm-evidence" id="evidence">
+  <div class="home-evidence__bg cbm-evidence__bg" aria-hidden="true"><picture><source type="image/webp" srcset="/new-miyarisan/assets/choose-bacillus-BxalckkS.webp"><img src="/new-miyarisan/assets/choose-bacillus-CvWB3ouX.jpg" alt="" loading="lazy" decoding="async"></picture></div>
+  <div class="container cbm-evidence__inner">
+    <!-- 標題列：左＝英文大字＋眉標＋標題，說明文字接在標題下方；右＝參考文獻（三筆分行） -->
+    <header class="cbm-evidence__head">
+      <div class="cbm-evidence__intro" data-reveal>
+        <div class="bg-word-heading">
+          <span class="bg-word bg-word--blue" aria-hidden="true">EVIDENCE</span>
+          <div class="cbm-evidence__title">
+            <span class="eyebrow">CLINICAL EVIDENCE</span>
+            <h2 class="h2">以<span class="text-grad">臨床試驗</span><br>為基礎的研究</h2>
+          </div>
+        </div>
+        <p class="body">整理 CBM588 已完成人體臨床試驗中，具有較穩健支持的研究方向，引用均來自已發表之學術期刊論文。</p>
+      </div>
+      <div class="cbm-refs" data-reveal>
+        <span class="cbm-refs__label">REFERENCES</span>
+        <p class="cbm-refs__title">參考文獻：</p>
+        <ul class="cbm-refs__list">
+          <li>Di Pierro F, et al. (2025) <i>Microorganisms</i></li>
+          <li>Kurata S, et al. (1988). <i>Jpn J Pediatr</i> (小兒科臨床)</li>
+          <li>Shimbo I, et al. (2005) <i>World J Gastroenterol</i></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 研究：01 主卡（照片融在卡片上方，跨兩列）＋02、03 副卡疊在右側 -->
+    <ol class="cbm-studies" data-reveal>
+      <li class="study-card study-card--feature">
+        <div class="study-card__photo">
+          <picture><source type="image/webp" srcset="/new-miyarisan/assets/evidence-kids-lab-9zOl6OoY.webp"><img src="/new-miyarisan/assets/evidence-kids-lab-oOk0hvBC.jpg" alt="CBM588 菌落培養觀察" width="1520" height="1013" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="study-card__body">
+          <div class="study-card__top"><span class="study-card__num">01</span><span class="tag">日本多中心觀察</span></div>
+          <h3 class="study-card__title">功能性腸道症狀研究</h3>
+          <p class="body">日本多中心臨床觀察中，受試者連續使用 CBM588 後，腸道症狀發生率呈現顯著下降趨勢，腹痛、腹脹、腹瀉等多項指標均有改善記錄，整體改善比例達研究者設定之顯著差異標準。</p>
+          <p class="study-card__result"><span class="study-card__tick" aria-hidden="true"><svg><use href="#i-tick"/></svg></span><span><strong>多項腸道症狀改善</strong>達顯著差異</span></p>
+        </div>
+      </li>
+      <li class="study-card">
+        <div class="study-card__top"><span class="study-card__num">02</span><span class="tag">兒科 RCT</span></div>
+        <h3 class="study-card__title">抗生素合併使用觀察</h3>
+        <p class="body">兒科隨機對照試驗比較抗生素合併 CBM588 的腸道狀況。合併組的腹瀉發生率顯著低於單純使用抗生素組，Cephalosporin 及 Penicillin 兩個系列均觀察到相近趨勢，整體達統計顯著差異。</p>
+        <p class="study-card__result"><span class="study-card__tick" aria-hidden="true"><svg><use href="#i-tick"/></svg></span><span>合併組<strong>腹瀉發生率顯著較低</strong></span></p>
+      </li>
+      <li class="study-card">
+        <div class="study-card__top"><span class="study-card__num">03</span><span class="tag">除菌療法輔助</span></div>
+        <h3 class="study-card__title"><i>H. pylori</i> 除菌療法輔助研究</h3>
+        <p class="body">臨床試驗比較三合一除菌療法加入 CBM588 的結果。加入 CBM588 組別的除菌成功率及療程中腸胃不適症狀改善率均優於對照組，兩項指標均達統計顯著差異。</p>
+        <p class="study-card__result"><span class="study-card__tick" aria-hidden="true"><svg><use href="#i-tick"/></svg></span><span>除菌成功率與耐受度<strong>同步提升</strong></span></p>
+      </li>
+    </ol>
+
+    <!-- 行動呼籲：文案全集 3.10（同首頁，收在本區塊底部的 CTA 色帶） -->
+    <div class="cta-card" id="cta" data-reveal>
+      <span class="cta-card__ring" aria-hidden="true"></span>
+      <span class="cta-card__ring cta-card__ring--sm" aria-hidden="true"></span>
+      <div class="cta-card__copy">
+        <h2 class="cta-card__title">了解妙利散哪邊購買</h2>
+        <p class="cta-card__text">透過 LINE 聯絡我們，由專業人員提供相關資訊</p>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn--invert btn--arrow" href="https://lin.ee/RuxohDy" target="_blank" rel="noopener">LINE 聯絡我們<span class="btn__arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn btn--ghost" href="index.html">回首頁</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- 全站 Footer｜文案：文案全集 1.3（法規字號不可刪改） -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <picture><source type="image/webp" srcset="/new-miyarisan/assets/logo-richever-exclusive-BkD6ttbd.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABiCAMAAABZJa7oAAAARVBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////+Gg3WpAAAAFnRSTlMAGdy0BIzpAfv+DSrPPvRPp4FvX8KcyOhS5wAAAAlwSFlzAAALEgAACxIB0t1+/AAADMxJREFUeNrVXIm2rKgOdUABJ5z//1NfElBBcTylfR+91l19qihgk5CEDATBceMM/83yUrVdk/yrre06VYaM1suDx41z/HGmmrqPhBj/7SaqIk7aXK/7OVym6qKiAaWQP1iWFJV4p9HqZNo3OX8GGViDhU0qDFRZVVX691bhUL8nr8SmUQsRq4yWf4+8LGBlbdDKtKgbled/OB3TsHnbV6OQb/E14oYNjbrQCJ/r7BzkQwVoYW1p3JZsYvI/tgDYpuxhXe+dZSL2WHTZDb6GnlmTAnPAZhVtzpDgjPG/E5gGgrHfFoDIlr26jBjYvyzwSIzwq4wW+Qus1vAKdvNlmS3GarhIZOC6Bpl5FJHif1Rse/KhTB+LLukRzjtEjsoriFkQxnAQxJg2mdHEP28sUNUo3+ZrEF/tubSG3Y/w4I91HrBX0OpZ2qc4qtpp0RHkUSQgrs/2PkW1IVrG38OLcrF+RGLg0wwIMTUWHA4DfFpnh4g58hoc31Td1GO3AQf5o2NMgLk1zPG+AeI+DNgRfYU0nXjwamNB98QA0YCvUpgOcrHP1YgXu9RnjP8TEmfxA910k8KEeJertbaADux9vNPuvg4YVPI4+I0mFuQRnt9v8OJ8D0j8ADAc0canjzWPnRzyH5/i+yR+ABiVrAp8gBuUIsVXeHHG4hPA0CPNN4hBIZFaL7/hZz1lO45fAIYu/VrrAENH+EX3HV5o4W0D8xlg6NOsGJcFA57ugX+JN+DDNcBybmINeIBzOLcjpi4dxKSRxJGOfoeny7tyekVhdpHCME3MnI1iqCKEsnfhigPjr4DDS2JLRFaLXQon9nf7JwSob4MjOw808E1vH/pB/uIKgd8N5yRGdgyt5s6W2V/1+6M57AsSC7tGjuxm4Wmz9pq/Z1B7lYrfcXFkyYhRWYAV9kwsmuNtJjprRd/39dCq8Kn3m125MxFgtneOrIsEPwQMJobF0r2W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" alt="RICHEVER Exclusive Distributor"></picture>
+        <p>Exclusive Distributor：RICHEVER<br>Manufacturer：ミヤリサン製薬株式会社<br>Miyarisan®日本原廠醫療級整腸益生菌<br>衛署藥輸字第014618號<br>高市衛藥廣字第11008003號</p>
+      </div>
+      <div class="site-footer__col">
+        <span class="site-footer__heading">產品資訊</span>
+        <a href="product.html">妙利散® BM</a>
+        <a href="cbm588.html">CBM588 宮入菌</a>
+        <a href="cbm588.html">臨床研究</a>
+        <a href="product.html">使用說明</a>
+      </div>
+      <div class="site-footer__col">
+        <span class="site-footer__heading">聯絡我們</span>
+        <a href="twstore.html">購買通路查詢</a>
+        <a href="https://lin.ee/RuxohDy" target="_blank" rel="noopener">醫療專業諮詢</a>
+        <a href="https://lin.ee/RuxohDy" target="_blank" rel="noopener">消費者服務</a>
+        <a href="https://richever.com.tw/" target="_blank" rel="noopener">台灣總代理裕心企業</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 RICHEVER Exclusive Distributor. All rights reserved. 藥品請依指示使用。</span>
+      <!-- 妙利散 MIYARISAN 主 Logo（素材：logo2.svg，已最佳化：只保留單一路徑，顏色改由 CSS 控制）
+     顏色跟著 CSS color 走（fill="currentColor"）：header 用 Logo 紅、footer 用白色
+     用法：在頁面寫 include 這個檔案，並傳入 class（例如 site-header__logo-svg） -->
+<svg class="logo site-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.02 79.11" role="img" aria-label="妙利散® MIYARISAN"><path fill="currentColor" fill-rule="evenodd" d="M114.49,79.11C65.19,79.11,0,69.15,0,51.07c0-7.17,11.4-13.2,28.13-17.81-4.24-3.41-6.96-8.7-6.96-14.65C21.17,8.36,29.32,0,39.35,0s18.18,8.36,18.18,18.61c0,3.27-.83,6.35-2.28,9.03,19.23-2.99,40.63-4.61,59.24-4.61,47.65,0,114.52,9.48,114.52,28.04s-69.88,28.04-114.52,28.04ZM24.32,67.14h5.94l3.11-17.38,3.31,13.55-.04.14h.08l.9,3.69h3.74l5.43-16.43.99,16.43h5.47l-1.56-28.45h-5.75l-6.09,18.53-3.99-18.53h-6.18l-5.38,28.45ZM56.56,18.61c0-9.48-7.36-17.16-16.53-17.55v2.66c7.73.38,13.58,7.03,13.58,15.03s-5.75,13.64-13.01,14.54v-.99c6.54-.9,12.06-6.2,12.06-13.69s-5.8-13.96-13.3-13.96-13.64,6.28-13.64,13.96c0,6.66,4.89,12.92,11.79,13.6v.99c-7.44-.69-12.75-7.36-12.75-14.6,0-7.69,5.73-13.98,13.04-14.79V1.16c-8.75.81-15.65,8.29-15.65,17.45,0,9.72,7.72,17.64,17.21,17.64s17.21-7.92,17.21-17.64ZM59.66,38.69l-4.9,28.49h5.33l4.89-28.49h-5.32ZM83.53,38.69l-5.75,8.22-.26.38c-.29.42-.77,1.11-1.28,1.89-.17-.51-.36-1.08-.62-1.83l-3.06-8.67h-6.05l5.96,16.35-2.09,12.14h5.34l2-11.73,12.17-16.76h-6.36ZM98.08,38.69h-4.81l-13.68,28.49h5.72l3.66-7.89h6.78l1.07,7.89h5.69l-4.43-28.49ZM122.84,39.52c-1.52-.76-3.1-.83-4.59-.83h-10.27l-4.9,28.49h5.33l1.97-11.44h2.1c1.66,0,2.22,0,3.98,5.22l2.08,6.22h6.15l-3.02-8.77c-.58-1.71-1.19-2.86-1.81-3.68,3.15-1.21,5.18-3.79,5.82-7.45.59-3.5-.51-6.55-2.84-7.77ZM131.83,38.69l-4.91,28.49h5.32l4.91-28.49h-5.32ZM155.25,40.79c-1.39-1.64-3.53-2.5-6.22-2.5-5,0-8.92,3.3-9.76,8.21-1.09,6.34,4.01,7.88,6.44,8.62,4.35,1.37,4.86,1.77,4.57,3.48-.43,2.46-2.71,3.34-4.69,3.34-.75,0-3.24-.17-3.77-2.36-.14-.55-.17-1.28-.07-2.17l.16-1.6-5.21.61-.14,1.17c-.09.7-.24,1.88,0,3.38.74,4.4,3.64,6.63,8.63,6.63s9.36-3.62,10.27-8.8c1.17-6.82-4.16-8.38-7.69-9.42-3.64-1.05-3.55-1.58-3.36-2.64.43-2.52,3.1-2.79,4.23-2.79s1.98.26,2.44.76c.61.69.58,1.9.5,2.75l-.15,1.55,5.19-.48.15-1.01c.4-2.77-.12-5.1-1.5-6.73ZM172.71,38.69h-4.83l-13.68,28.49h5.73l3.65-7.89h6.79l1.09,7.89h5.68l-4.43-28.49ZM197.03,38.69l-2.75,15.99-6.25-15.99h-4.75l-4.3,28.49h4.87l2.77-17.39,7.5,17.39h4.25l3.78-28.49h-5.12ZM168.78,48.23c.03-.06.06-.13.09-.19.01.07.02.15.04.23l.74,5.71h-3.6l2.73-5.75ZM118.62,49.61c-.98.47-1.7.47-2.88.47h-4.39l1.03-5.94h5.51c.96,0,1.51.13,1.98.5.38.27.69,1.09.5,2.2-.21,1.19-.96,2.38-1.73,2.77ZM94.16,48.23c.03-.07.06-.14.09-.2.01.08.02.16.04.24l.75,5.71h-3.6l2.72-5.75ZM28.38,20.44l-.08-.59s8.7-.05,9.56-.05v-2.93c-.86,0-9.52.05-9.52.05l.12-.59c.03-.12,2-9.11,10.88-9.11s10.85,8.93,10.85,8.99l.13.62s-9.06-.06-10.15-.08v3.08c1.1.03,10.2.04,10.2.04l-.07.56c-.01.09-1.51,9.52-10.96,9.52s-10.96-9.45-10.97-9.54ZM49.08,15.82c-.43-1.55-2.43-7.59-9.73-7.59s-9.39,6.09-9.77,7.56c1.27,0,18.35.03,19.5.03ZM49.22,20.89c-1.06,0-18.6-.02-19.65,0,.44,1.91,2.4,8.11,9.77,8.11s9.43-6.18,9.87-8.1ZM194.56,26.42c-.75.44-1.56.67-2.42.67s-1.66-.23-2.4-.68c-.75-.45-1.34-1.06-1.78-1.82-.43-.76-.65-1.59-.65-2.47s.21-1.7.65-2.46c.44-.77,1.04-1.38,1.79-1.81.75-.45,1.55-.67,2.4-.67s1.69.22,2.43.67c.75.45,1.33,1.06,1.76,1.83.43.77.64,1.6.64,2.48s-.21,1.7-.65,2.46c-.43.76-1.03,1.36-1.78,1.81ZM195.77,20.01c-.37-.67-.88-1.2-1.52-1.58-.64-.39-1.33-.59-2.08-.59-1.15,0-2.14.42-2.95,1.25-.83.83-1.24,1.85-1.24,3.04,0,.75.18,1.46.56,2.12.37.66.88,1.19,1.53,1.57.65.39,1.34.58,2.1.58,1.12,0,2.09-.41,2.92-1.24.82-.83,1.23-1.85,1.23-3.05,0-.74-.19-1.44-.55-2.11ZM193.56,24.1l-.05-.69c-.02-.35-.09-.57-.21-.68-.12-.11-.42-.16-.88-.16h-1.4v2.37h-.88v-5.69h2.32c.7,0,1.2.12,1.51.37.31.24.47.66.47,1.24s-.24.99-.69,1.25c.22.11.38.25.48.4.1.15.15.45.15.89v.65c0,.27.07.51.2.74l.09.15h-.99c-.06-.22-.1-.49-.12-.84ZM193.3,20.24c-.17-.12-.45-.18-.85-.18h-1.42v1.69h1.37c.4,0,.7-.06.88-.18.18-.13.29-.35.29-.67s-.09-.53-.26-.66Z"/></svg>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
